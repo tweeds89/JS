@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dodatki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'> 
+    <script src="checkbox.js" type="text/javascript"></script>
+</head>
+<body>
+<nav class='navbar navbar-default'>
+    <div class='container'>
+        <div class="navbar-header">
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class='col-xs-12 col-sm-6 col-sm-offset-3'>
+        <div class='page-header' name="page">
+            <h1>Dodatki</h1>
+            <p>
+                Kwota za dodatki: <span id="price" name="price">0</span>zł
+            </p>
+        </div>
+        <div class='panel'>
+            <div class='panel-body'>
+                <form action="#">                              
+                    <div class="checkbox">
+                        <label><input type="checkbox" id="all" onClick="toggle(this)">Wszystkie dodatki</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value= 3.50 name="additives"  id="chees" />Dodatkowy ser - 3,50zł</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value= 2.20 name="additives"  id="sauce" />Dodatkowy sos - 2,20zł</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value= 5.00  name="additives"  id="ham"/>Dodatkowa szynka - 5zł</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value= 4.10  name="additives"  id="pineapple" />Ananas - 4,10zł</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox"  value= 3.50 name="additives"  id="mashrooms" />Pieczarki - 3,50zł</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" id="clear" onClick="uncheck(this)">Wyczyść</label>
+                    </div>
+                    <br>
+                    <p>
+                        <button class='btn btn-primary'>Submit</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

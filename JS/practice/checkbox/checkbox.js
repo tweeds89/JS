@@ -22,7 +22,7 @@ function remove() {
    
    var all = document.getElementById("all");
     
-   if (clear.checked=true){
+   if (clear.checked){
     
       for(var i=0; i< checkboxes.length;i++) {
    
